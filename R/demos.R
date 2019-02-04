@@ -15,7 +15,7 @@
 #' }
 #'
 #' }
-demoNumericRange <- function(example = "datepicker") {
+demoNumericRange <- function() {
   shiny::shinyAppFile(
     appFile = system.file(sprintf("examples/numericRange/app.R", example), package = "shinyRange"),
     options = list("display.mode" = "showcase")

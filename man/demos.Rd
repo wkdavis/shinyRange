@@ -5,7 +5,7 @@
 \alias{demoNumericRange}
 \title{And example showing how numericRangeInput works}
 \usage{
-demoNumericRange(example = "datepicker")
+demoNumericRange()
 }
 \description{
 And example showing how numericRangeInput works
