@@ -1,4 +1,4 @@
-#' And example showing how numericRangeInput works
+#' An example showing how numericRangeInput works
 #'
 #' @name demos
 #' @export
@@ -17,7 +17,7 @@
 #' }
 demoNumericRange <- function() {
   shiny::shinyAppFile(
-    appFile = system.file(sprintf("examples/numericRange/app.R", example), package = "shinyRange"),
+    appFile = system.file("examples/numericRange/app.R", package = "shinyRange"),
     options = list("display.mode" = "showcase")
   )
 }
