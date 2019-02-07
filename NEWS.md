@@ -1,3 +1,7 @@
+# shinyRange 0.0.5
+
+* `updateNumericRangeInput()` now has documentation.  
+
 # shinyRange 0.0.4
 
 * `numericRangeInput()` now exports correctly.  

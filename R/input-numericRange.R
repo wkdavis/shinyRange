@@ -12,6 +12,7 @@
 #'
 #' @importFrom htmltools tags tagList singleton findDependencies attachDependencies
 #' @importFrom shiny validateCssUnit sliderInput restoreInput
+#' @importFrom utils packageVersion
 #' @export
 
 numericRangeInput <- function(inputId, label, value,
@@ -53,7 +54,14 @@ numericRangeInput <- function(inputId, label, value,
   htmltools::attachDependencies(rangeTag,dep,append = TRUE)
 }
 
+#' Change the value of a numeric range input
+#'
+#' Change the value of a numeric range input.
+#'
+#' @param session The session object passed to function given to shinyServer.
+#' @inheritParams numericRangeInput
 #' @export
+#'
 updateNumericRangeInput <- function(session, inputId, label, value) {
 
   value <- c(min(value),max(value))
