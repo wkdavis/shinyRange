@@ -12,6 +12,7 @@
 #'
 #' @importFrom htmltools tags tagList singleton findDependencies attachDependencies
 #' @importFrom shiny validateCssUnit sliderInput restoreInput
+#' @export
 
 numericRangeInput <- function(inputId, label, value,
                               width = NULL, separator = " to ") {
@@ -52,6 +53,7 @@ numericRangeInput <- function(inputId, label, value,
   htmltools::attachDependencies(rangeTag,dep,append = TRUE)
 }
 
+#' @export
 updateNumericRangeInput <- function(session, inputId, label, value) {
 
   value <- c(min(value),max(value))

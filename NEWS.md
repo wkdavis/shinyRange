@@ -1,6 +1,10 @@
+# shinyRange 0.0.4
+
+* `numericRangeInput()` now exports correctly.  
+
 # shinyRange 0.0.3
 
-* `demoNumericRange()` loses unnecessary `example` argument  
+* `demoNumericRange()` loses unnecessary `example` argument.  
 
 # shinyRange 0.0.2
 

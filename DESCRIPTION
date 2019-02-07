@@ -1,6 +1,6 @@
 Package: shinyRange
 Title: Text-box-based numeric range input widget for Shiny.
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: person("Wil","Davis",,"davis.3243@buckeyemail.osu.edu",role=c("aut","cre"),comment = c(ORCID = "0000-0001-9780-2576"))
 Description: Text-box-based numeric range input widget for Shiny.
 License: MIT + file LICENSE
