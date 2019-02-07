@@ -3,12 +3,12 @@
 \name{demos}
 \alias{demos}
 \alias{demoNumericRange}
-\title{And example showing how numericRangeInput works}
+\title{An example showing how numericRangeInput works}
 \usage{
 demoNumericRange()
 }
 \description{
-And example showing how numericRangeInput works
+An example showing how numericRangeInput works
 }
 \examples{
 \dontrun{
