@@ -1,3 +1,8 @@
+# shinyRange 0.0.6
+
+* `numericRangeInput()` now has an example.  
+* `numericRangeInput()` has a simplified namespace.  
+
 # shinyRange 0.0.5
 
 * `updateNumericRangeInput()` now has documentation.  

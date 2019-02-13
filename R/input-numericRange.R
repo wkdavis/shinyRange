@@ -10,9 +10,50 @@
 #' @inheritParams shiny::sliderInput
 #' @inheritParams shiny::dateRangeInput
 #'
-#' @importFrom htmltools tags tagList singleton findDependencies attachDependencies
-#' @importFrom shiny validateCssUnit sliderInput restoreInput
+#' @importFrom htmltools tags tagList singleton findDependencies attachDependencies validateCssUnit
+#' @importFrom shiny sliderInput restoreInput
 #' @importFrom utils packageVersion
+#' @examples
+#' \dontrun{
+#'
+#' if (interactive()) {
+#'
+#' ### examples ----
+#'
+#' # see ?demoNumericRange
+#' demoNumericRange()
+#'
+#'
+#' ###  basic usage ----
+#'
+#' library( shiny )
+#' library( shinyRange )
+#'
+#'
+#' ui <- fluidPage(
+#'
+#'   tags$br(),
+#'
+#'   numericRangeInput(
+#'     inputId = "noui1", label = "Numeric Range Input:",
+#'     value = c(100, 400)
+#'   ),
+#'   verbatimTextOutput(outputId = "res1")
+#'
+#' )
+#'
+#' server <- function(input, output, session) {
+#'
+#'   output$res1 <- renderPrint(input$noui1)
+#'
+#' }
+#'
+#' shinyApp(ui, server)
+#'
+#'
+#' }
+#'
+#' }
 #' @export
 
 numericRangeInput <- function(inputId, label, value,
@@ -26,7 +67,7 @@ numericRangeInput <- function(inputId, label, value,
   rangeTag <-
     htmltools::tags$div(id = inputId,
         class = "shiny-numeric-range-input form-group shiny-input-container",
-        style = if (!is.null(width)) paste0("width: ", shiny::validateCssUnit(width), ";"),
+        style = if (!is.null(width)) paste0("width: ", htmltools::validateCssUnit(width), ";"),
 
         controlLabel(inputId, label),
         # input-daterange class is needed for dropdown behavior
