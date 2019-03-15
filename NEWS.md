@@ -1,3 +1,7 @@
+The function `numericRangeInput()` is included in `shinyWidgets` as of 0.4.5. 
+All changes and updates to this function will be made in `shinyWidgets`. 
+`shinyRange` will no longer be maintained. 
+
 # shinyRange 0.0.6
 
 * `numericRangeInput()` now has an example.  

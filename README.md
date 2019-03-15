@@ -1,10 +1,7 @@
 # shinyRange
 
-[![Build Status](https://travis-ci.org/wkdavis/shinyRange.svg?branch=master)](https://travis-ci.org/wkdavis/shinyRange)
-[![Build status](https://ci.appveyor.com/api/projects/status/5osq1fimiopdrtq0?svg=true)](https://ci.appveyor.com/project/wdavis12/shinyrange)
-[![codecov](https://codecov.io/gh/wkdavis/shinyRange/branch/master/graph/badge.svg)](https://codecov.io/gh/wkdavis/shinyRange)
-[![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-![](https://img.shields.io/github/license/wkdavis/shinyRange.svg?style=flat)
+[![Project Status: Moved to https://github.com/dreamRs/shinyWidgets – The project has been moved to a new location, and the version at that location should be considered authoritative.](https://www.repostatus.org/badges/latest/moved.svg)](https://www.repostatus.org/#moved) to [https://github.com/dreamRs/shinyWidgets](https://github.com/dreamRs/shinyWidgets)
 
-Text-box-based numeric range input widget for Shiny.
+The function `numericRangeInput()` is included in `shinyWidgets` as of 0.4.5. 
+All changes and updates to this function will be made in `shinyWidgets`. 
+`shinyRange` will no longer be maintained. 
